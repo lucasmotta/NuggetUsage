@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	
+	<head>
+	
+		<title>NuggetUsage</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		
+		<meta name="author" content="" />
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		
+		<!-- Facebook Stuff
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:type" content="website"/> 
+		<meta property="og:url" content=""/> 
+		<meta property="og:site_name" content=""/>
+		-->
+	
+		<script type="text/javascript" src="embed/js/swfobject.js"></script>
+		<script type="text/javascript" src="embed/js/swffit.js"></script>
+		<!--script type="text/javascript" src="embed/js/swfaddress.js"></script-->
+		<!--script type="text/javascript" src="embed/js/share.js"></script-->
+	
+		<style type="text/css" media="screen">@import url(embed/css/main.css);</style>
+	
+	</head>
+
+	<body>
+	
+		<div id="flash_content">
+			<a href="http://get.adobe.com/flashplayer"><img src="embed/image/get_flash_player.jpg" /></a>
+		</div>
+	
+		<script type="text/javascript">
+		
+			var attributes = {
+			    id: "flashObject",
+			    name: "flashObject"
+			};
+			var flashvars = {
+				basepath:""
+			};
+			var params = {};
+			
+			params.allowFullScreen = "true";
+			params.allowScriptAccess = "always";
+			
+			swfobject.embedSWF("Preloader.swf", "flash_content", "100%", "100%", "10.0.0", "", flashvars, params, attributes);
+			swffit.fit("flash_content", 1000, 700);
+			
+		</script>
+	
+	</body>
+
+</html>

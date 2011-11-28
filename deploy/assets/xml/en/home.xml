@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<home>
+		<header>Hello, I'm a Header</header>
+		<caption>And I'm a caption. I know that I'm smaller, but that's ok, I can live with that.</caption>
+		<body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus odio, tempor eu tincidunt a, ullamcorper eu felis. Nullam non mattis magna. Etiam ultricies felis eget odio fringilla lacinia. Nulla facilisi. Pellentesque venenatis malesuada porttitor. Praesent quis blandit urna. Mauris feugiat, sapien sed laoreet interdum, justo erat luctus dui, et interdum lacus sem in eros. Cras at magna consequat elit lobortis gravida. Quisque faucibus orci quis erat ultrices ac vehicula justo vulputate. Aenean augue neque, vestibulum non viverra et, dignissim at mi. Aliquam turpis lacus, fringilla at aliquam nec, iaculis id purus. Vivamus id tellus orci, eu eleifend dui. Nulla tempus, dui vel bibendum ornare, risus purus lobortis lacus, nec feugiat quam eros id massa.</body>
+	</home>
+</document>

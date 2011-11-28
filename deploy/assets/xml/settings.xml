@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	
+	<languages>
+		<!-- Available attributes: default  -->
+		<language default="true">en</language>
+		<language default="false">es</language>
+		<language default="false">pt-BR</language>
+	</languages>
+	
+	<data>
+		<!-- Available options: %(language)s, %(basepath)s -->
+		<xml url="assets/xml/%(language)s/home.xml"/>
+		<xml url="assets/xml/%(language)s/products.xml"/>
+	</data>
+	
+	<stage>
+		<!-- Available options: showAll, exactFit, noBorder, noScale -->
+		<scale>noScale</scale>
+		<!-- Available options: default, T, L, B, R, TL, TR, BL, BR -->
+		<align>TL</align>
+		<!-- Available options: low, medium, high, best -->
+		<quality>best</quality>
+	</stage>
+	
+	<!-- Available attributes: hideBuiltInItems -->
+	<contextMenu hideBuiltInItems="true">
+		<!-- Available attributes: enabled (boolean), separatorBefore (boolean), visible (boolean) -->
+		<!--
+		<item enabled="true" visible="true" separatorBefore="false">
+			<caption>Your Caption</caption>
+			<link>http://yourlink.com</link>
+		</item>
+		<item enabled="true" visible="true" separatorBefore="false">
+			<caption>Your Caption</caption>
+			<link>mailto:your@email.com</link>
+		</item>
+		-->
+	</contextMenu>
+	
+</settings>

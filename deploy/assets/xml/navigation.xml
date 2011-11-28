@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigation>
+	<section id="home" default="true">
+		<view>fashion.nugget.usage.section.Home</view>
+		<dependencies />
+	</section>
+	<section id="products" default="false">
+		<view>fashion.nugget.usage.section.Products</view>
+		<dependencies />
+	</section>
+</navigation>

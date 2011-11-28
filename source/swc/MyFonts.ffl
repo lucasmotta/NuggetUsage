@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<library name="MyFonts" output="source/swc" format="1" static="false">
+	<font id="helveticaBold" family="Helvetica" style="1" cs="17,1,2,3,4" type="0" path="" ascff="false" autoId="true"/>
+</library>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<products>
+		<header>Produtos</header>
+		<caption>Aqui voce pode encontrar muitas coisas</caption>
+		
+		<product>
+			<label>Primeiro Produto</label>
+			<image>assets/image/product01.jpg</image>
+		</product>
+		<product>
+			<label>Segundo Produto</label>
+			<image>assets/image/product02.jpg</image>
+		</product>
+		<product>
+			<label>Terceiro Produto</label>
+			<image>assets/image/product03.jpg</image>
+		</product>
+		<product>
+			<label>Quarto Produto</label>
+			<image>assets/image/product04.jpg</image>
+		</product>
+	</products>
+</document>
