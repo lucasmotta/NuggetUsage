@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
 	<menu>
-		<label>Select your section:</label>
+		<label>Selecione sua seção:</label>
 		<item id="home">Home</item>
-		<item id="products">Products</item>
+		<item id="products">Produtos</item>
 	</menu>
 </document>

@@ -2,10 +2,14 @@ package fashion.nugget.usage.section
 {
 
 	import fashion.nugget.i18n.spell;
+	import fashion.nugget.text.GlossaryText;
 	import fashion.nugget.usage.display.Product;
+	import fashion.nugget.usage.text.helveticaBold;
 	import fashion.nugget.util.display.safeRemoveAndDispose;
 	import fashion.nugget.util.string.printf;
 	import fashion.nugget.view.SectionView;
+
+	import com.greensock.TweenLite;
 
 	/**
 	 * @author Lucas Motta
@@ -20,8 +24,12 @@ package fashion.nugget.usage.section
 		// ----------------------------------------------------
 		// PRIVATE AND PROTECTED VARIABLES
 		// ----------------------------------------------------
-		protected var _products : Vector.<Product>;
+		protected var _header : GlossaryText;
 		
+		protected var _caption : GlossaryText;
+		
+		
+		protected var _products : Vector.<Product>;
 		// ----------------------------------------------------
 		// CONSTRUCTOR
 		// ----------------------------------------------------
@@ -44,11 +52,20 @@ package fashion.nugget.usage.section
 			
 			_products = new Vector.<Product>();
 			
+			_header = new GlossaryText("products.header", helveticaBold(24));
+			_header.x = _header.y = 50;
+			addChild(_header);
+			
+			_caption = new GlossaryText("products.caption", helveticaBold(18, 0x999999));
+			_caption.x = _header.x;
+			_caption.y = _header.y + _header.height;
+			addChild(_caption);
+			
 			for(i = 0; i < length; i++)
 			{
-				item = new Product(printf("products.product#%(id)s.label", { id:i }), printf("products.product#%(id)s.image", { id:i }));
+				item = new Product(printf("products.product#%f.label", i), printf("products.product#%f.image", i));
 				item.x = 50 + i * (item.width + 20);
-				item.y = 50;
+				item.y = _caption.y + _caption.height + 30;
 				addChild(item);
 				_products.push(item);
 			}
@@ -60,6 +77,17 @@ package fashion.nugget.usage.section
 		// ----------------------------------------------------
 		// PUBLIC METHODS
 		// ----------------------------------------------------
+		override public function transitionIn() : void
+		{
+			this.alpha = 0;
+			TweenLite.to(this, 1, { alpha:1, onComplete:transitionInComplete } );
+		}
+		
+		override public function transitionOut() : void
+		{
+			TweenLite.to(this, .5, { alpha:0, onComplete:transitionOutComplete } );
+		}
+		
 		override public function dispose() : void
 		{
 			if(_products)

@@ -1,10 +1,12 @@
 package fashion.nugget.usage.section
 {
 
-	import fashion.nugget.util.display.safeRemoveAndDispose;
 	import fashion.nugget.text.GlossaryText;
 	import fashion.nugget.usage.text.helveticaBold;
+	import fashion.nugget.util.display.safeRemoveAndDispose;
 	import fashion.nugget.view.SectionView;
+
+	import com.greensock.TweenLite;
 	
 	
 	public class Home extends SectionView
@@ -43,12 +45,12 @@ package fashion.nugget.usage.section
 			_header.x = _header.y = 50;
 			addChild(_header);
 			
-			_caption = new GlossaryText("home.caption", helveticaBold(18));
+			_caption = new GlossaryText("home.caption", helveticaBold(18, 0x999999));
 			_caption.x = _header.x;
 			_caption.y = _header.y + _header.height;
 			addChild(_caption);
 			
-			_text = new GlossaryText("home.body", helveticaBold(13, 0, 8));
+			_text = new GlossaryText("home.body", helveticaBold(14, 0, 8));
 			_text.x = _caption.x;
 			_text.y = _caption.y + _caption.height + 30;
 			_text.width = 900;
@@ -63,6 +65,17 @@ package fashion.nugget.usage.section
 		// ----------------------------------------------------
 		// PUBLIC METHODS
 		// ----------------------------------------------------
+		override public function transitionIn() : void
+		{
+			this.alpha = 0;
+			TweenLite.to(this, 1, { alpha:1, onComplete:transitionInComplete } );
+		}
+		
+		override public function transitionOut() : void
+		{
+			TweenLite.to(this, .5, { alpha:0, onComplete:transitionOutComplete } );
+		}
+		
 		override public function dispose() : void
 		{
 			_header = safeRemoveAndDispose(_header);

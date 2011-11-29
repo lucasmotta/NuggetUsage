@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<menu>
+		<label>Seleccione una sección:</label>
+		<item id="home">Principal</item>
+		<item id="products">Productos</item>
+	</menu>
+</document>

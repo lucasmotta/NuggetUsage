@@ -12,6 +12,8 @@
 		<!-- Available options: %(language)s, %(basepath)s -->
 		<xml url="assets/xml/%(language)s/home.xml"/>
 		<xml url="assets/xml/%(language)s/products.xml"/>
+		<xml url="assets/xml/%(language)s/menu.xml"/>
+		<xml url="assets/xml/%(language)s/glossary.xml"/>
 	</data>
 	
 	<stage>
@@ -31,11 +33,8 @@
 			<caption>Your Caption</caption>
 			<link>http://yourlink.com</link>
 		</item>
-		<item enabled="true" visible="true" separatorBefore="false">
-			<caption>Your Caption</caption>
-			<link>mailto:your@email.com</link>
-		</item>
 		-->
+		
 	</contextMenu>
 	
 </settings>

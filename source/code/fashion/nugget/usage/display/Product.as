@@ -42,7 +42,7 @@ package fashion.nugget.usage.display
 			_background = new Box(0, 200, 100);
 			addChild(_background);
 			
-			_labelText = new GlossaryText(labelKey, helveticaBold(12));
+			_labelText = new GlossaryText(labelKey, helveticaBold(14));
 			_labelText.y = _background.height + 5;
 			addChild(_labelText);
 			

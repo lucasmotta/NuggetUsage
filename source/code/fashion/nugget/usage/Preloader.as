@@ -1,15 +1,15 @@
 package fashion.nugget.usage
 {
 
-	import fashion.nugget.util.display.safeRemoveChild;
+	import fashion.nugget.abstract.AbstractAppLoader;
 	import fashion.nugget.display.Box;
-	import fashion.nugget.abstract.AbstractPreloader;
+	import fashion.nugget.util.display.safeRemoveChild;
 
 	import com.greensock.events.LoaderEvent;
 	
 	
 	[SWF(backgroundColor="#FFFFFF", frameRate="60", width="1000", height="700")]
-	public class Preloader extends AbstractPreloader
+	public class Preloader extends AbstractAppLoader
 	{
 		
 		// ----------------------------------------------------
