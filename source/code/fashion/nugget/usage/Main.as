@@ -1,6 +1,9 @@
 package fashion.nugget.usage
 {
 
+	import com.greensock.loading.ImageLoader;
+	import com.greensock.loading.VideoLoader;
+	import com.greensock.loading.LoaderMax;
 	import fashion.nugget.abstract.AbstractApp;
 	import fashion.nugget.events.NuggetEvent;
 	import fashion.nugget.usage.display.LanguageSelector;
@@ -14,6 +17,7 @@ package fashion.nugget.usage
 		
 		public function Main()
 		{
+			LoaderMax.activate([VideoLoader, ImageLoader]);
 		}
 		
 		override protected function onAppReady(e : NuggetEvent) : void

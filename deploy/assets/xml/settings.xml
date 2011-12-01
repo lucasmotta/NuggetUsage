@@ -10,10 +10,10 @@
 	
 	<data>
 		<!-- Available options: %(language)s, %(basepath)s -->
-		<xml url="assets/xml/%(language)s/home.xml"/>
-		<xml url="assets/xml/%(language)s/products.xml"/>
-		<xml url="assets/xml/%(language)s/menu.xml"/>
-		<xml url="assets/xml/%(language)s/glossary.xml"/>
+		<xml url="%(basepath)s/assets/xml/%(language)s/home.xml"/>
+		<xml url="%(basepath)s/assets/xml/%(language)s/products.xml"/>
+		<xml url="%(basepath)s/assets/xml/%(language)s/menu.xml"/>
+		<xml url="%(basepath)s/assets/xml/%(language)s/glossary.xml"/>
 	</data>
 	
 	<stage>
