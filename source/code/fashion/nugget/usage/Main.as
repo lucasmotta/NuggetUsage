@@ -32,5 +32,10 @@ package fashion.nugget.usage
 			_app.navigation.toDefault();
 		}
 		
+		override public function set navigationXML(value : XML) : void
+		{
+			//active SWFAddress
+			_navigation = new SWFAddressNavigation( value );
+		}
 	}
 }
