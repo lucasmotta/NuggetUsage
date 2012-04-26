@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
 	
+	<base>
+		<swf url="%(basepath)s/Main.swf" />
+		<navigation url="%(basepath)s/assets/xml/navigation.xml" />
+	</base>
+	
 	<languages>
 		<!-- Available attributes: default  -->
 		<language default="true">en</language>

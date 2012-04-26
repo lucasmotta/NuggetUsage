@@ -24,7 +24,6 @@ package fashion.nugget.usage
 		 */
 		public function Preloader()
 		{
-			super("Main.swf");
 		}
 		
 		// ----------------------------------------------------
